@@ -1,0 +1,52 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 4rem 8rem;
+}
+
+h2, h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+.logo {
+    width : 100%;
+    height : auto;
+}
+
+.card {
+    border: 6px solid #000;
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.btn-detail {
+    background-color: #FA0B0B;
+    border-color: #FA0B0B;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    width: 166px;
+    height: 68px;
+    font-size: 1.75rem;
+}
+
+/* reponsive tablet */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 1rem 2rem;
+    }
+}
+
+/* reponsive mobile */
+@media screen and (max-width: 480px) {
+    body {
+        margin: 1rem;
+    }
+}
+
