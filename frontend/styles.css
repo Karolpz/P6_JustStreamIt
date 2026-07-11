@@ -41,6 +41,24 @@ img {
     width: 214px;
 }
 
+.card-img {
+    aspect-ratio: 1 / 1;
+}
+
+.card-img-overlay {
+    top: 35px;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    color: #fff;
+}
+
+.show-extra {
+    display: block !important;
+}
+
 
 #best-movie .card {
     border: 6px solid #000;
@@ -60,16 +78,6 @@ img {
 #best-movie .btn {
     width: 166px;
     height: 68px;
-}
-
-#top-rated-movies .card-img-overlay {
-    top: 35px;
-    left: 0;
-    width: 100%;
-    height: 35%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    color: #fff;
 }
 
 #top-rated-movies .btn-detail {
