@@ -21,12 +21,13 @@
             <section id="best-movie">
                 <h2 class="mt-5 mb-5">Meilleur film</h2>
                 <div class="card d-flex flex-md-row gap-4">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuIpILxfxzzRPddxcQJYvDsZoVPy4JW6ee4gL2Z9EUKA&s=10" class=" rounded-0" alt="Affiche The Big Lebowski">
+                        <img src="" class=" rounded-0" alt="Affiche du meilleur film" id="best-movie-img">
                     <div class="card-body d-flex flex-column">
-                        <h3 class="card-title">Lorem ipsum</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.</p>
-                        <a href="#" class="btn btn-primary btn-red mx-auto mx-md-0 d-block d-md-inline-block align-self-md-end" data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</a>
+                        <h3 class="card-title" id="best-movie-title"></h3>
+                        <p class="card-text" id="best-movie-summary"></p>
+                        <a href="#" id="best-movie-btn"
+                            class="btn btn-primary btn-red btn-detail mx-auto mx-md-0 d-block d-md-inline-block align-self-md-end"
+                            data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</a>
                     </div>
                 </div>
                 </section>
@@ -34,62 +35,68 @@
             <section id="top-rated-movies">
                 <h2 class="mt-5 mb-5">Films les mieux notés</h2>
                 <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card text-bg-dark rounded-0">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuIpILxfxzzRPddxcQJYvDsZoVPy4JW6ee4gL2Z9EUKA&s=10" class="card-img rounded-0" alt="Titanic">
-                        <div class="card-img-overlay d-flex flex-column rounded-0">
-                            <h5 class="card-title mb-0">Titanic</h5>
-                            <button class="btn btn-dark btn-detail btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card text-bg-dark rounded-0">
+                            <img id="top-movie-1-img" src="" class="card-img rounded-0" alt="">
+                            <div class="card-img-overlay d-flex flex-column rounded-0">
+                                <h5 id="top-movie-1-title" class="card-title mb-0"></h5>
+                                <button id="top-movie-1-btn" class="btn btn-dark btn-detail btn-sm align-self-end"
+                                    data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card text-bg-dark rounded-0">
-                        <img src="https://picsum.photos/250/250" class="card-img rounded-0" alt="Titanic">
-                        <div class="card-img-overlay d-flex flex-column rounded-0">
-                            <h5 class="card-title mb-0">Titanic</h5>
-                            <button class="btn btn-dark btn-detail btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card text-bg-dark rounded-0">
+                            <img id="top-movie-2-img" src="" class="card-img rounded-0" alt="">
+                            <div class="card-img-overlay d-flex flex-column rounded-0">
+                                <h5 id="top-movie-2-title" class="card-title mb-0"></h5>
+                                <button id="top-movie-2-btn" class="btn btn-dark btn-detail btn-sm align-self-end"
+                                    data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
-                    <div class="card text-bg-dark rounded-0">
-                        <img src="https://picsum.photos/250/250" class="card-img rounded-0" alt="Titanic">
-                        <div class="card-img-overlay d-flex flex-column rounded-0">
-                            <h5 class="card-title mb-0">Titanic</h5>
-                            <button class="btn btn-dark btn-detail btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                        <div class="card text-bg-dark rounded-0">
+                            <img id="top-movie-3-img" src="" class="card-img rounded-0" alt="">
+                            <div class="card-img-overlay d-flex flex-column rounded-0">
+                                <h5 id="top-movie-3-title" class="card-title mb-0"></h5>
+                                <button id="top-movie-3-btn" class="btn btn-dark btn-detail btn-sm align-self-end"
+                                    data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
-                    <div class="card text-bg-dark rounded-0">
-                        <img src="https://picsum.photos/250/250" class="card-img rounded-0" alt="Titanic">
-                        <div class="card-img-overlay d-flex flex-column rounded-0">
-                            <h5 class="card-title mb-0">Titanic</h5>
-                            <button class="btn btn-dark btn-detail btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                        <div class="card text-bg-dark rounded-0">
+                            <img id="top-movie-4-img" src="" class="card-img rounded-0" alt="">
+                            <div class="card-img-overlay d-flex flex-column rounded-0">
+                                <h5 id="top-movie-4-title" class="card-title mb-0"></h5>
+                                <button id="top-movie-4-btn" class="btn btn-dark btn-detail btn-sm align-self-end"
+                                    data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-                    <div class="card text-bg-dark rounded-0">
-                        <img src="https://picsum.photos/250/250" class="card-img rounded-0" alt="Titanic">
-                        <div class="card-img-overlay d-flex flex-column rounded-0">
-                            <h5 class="card-title mb-0">Titanic</h5>
-                            <button class="btn btn-dark btn-detail btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                        <div class="card text-bg-dark rounded-0">
+                            <img id="top-movie-5-img" src="" class="card-img rounded-0" alt="">
+                            <div class="card-img-overlay d-flex flex-column rounded-0">
+                                <h5 id="top-movie-5-title" class="card-title mb-0"></h5>
+                                <button id="top-movie-5-btn" class="btn btn-dark btn-detail btn-sm align-self-end"
+                                    data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-                    <div class="card text-bg-dark rounded-0">
-                        <img src="https://picsum.photos/250/250" class="card-img rounded-0" alt="Titanic">
-                        <div class="card-img-overlay d-flex flex-column rounded-0">
-                            <h5 class="card-title mb-0">Titanic</h5>
-                            <button class="btn btn-dark btn-detail btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                        <div class="card text-bg-dark rounded-0">
+                            <img id="top-movie-6-img" src="" class="card-img rounded-0" alt="">
+                            <div class="card-img-overlay d-flex flex-column rounded-0">
+                                <h5 id="top-movie-6-title" class="card-title mb-0"></h5>
+                                <button id="top-movie-6-btn" class="btn btn-dark btn-detail btn-sm align-self-end"
+                                    data-bs-toggle="modal" data-bs-target="#detailsModal">Détails</button>
+                            </div>
                         </div>
                     </div>
+                    <button class="btn btn-primary btn-red btn-voir-plus mx-auto d-block d-lg-none mt-3">Voir plus</button>
                 </div>
-                <button class="btn btn-primary btn-red btn-voir-plus mx-auto d-block d-lg-none mt-3">Voir plus</button>
-            </section>
             <section>
                 <h2 class="mt-5 mb-5">Mystery</h2>
                 <div class="row g-4">
@@ -238,38 +245,32 @@
                         <div class="row">
                             <div class="d-flex justify-content-between align-items-lg-center align-items-start mb-0 mb-lg-3">
                                 <div>
-                                    <h2 class="fw-bold" id="detailsModalLabel">Lorem ipsum</h2>
-                                    <p class="fw-bold mb-1">Lorem, Ipsum, Dolor</p>
-                                    <p class="fw-bold mb-1">Lorem - 117 minutes (XX / XX)</p>
-                                    <p class="fw-bold mb-1">IMDB score: 0.0/10</p>
-                                    <p class="fw-bold mb-3">Recettes au box-office: $0.0m</p>
+                                    <h2 class="fw-bold" id="detailsModalLabel"></h2>
+                                    <p class="fw-bold mb-1" id="modal-genre"></p>
+                                    <p class="fw-bold mb-1" id="modal-duration"></p>
+                                    <p class="fw-bold mb-1" id="modal-score"></p>
+                                    <p class="fw-bold mb-3" id="modal-boxoffice"></p>
                                     <p class="fw-bold mb-1">Réalisé par:</p>
-                                    <p>Lorem Ipsum, Dolor Sit</p>
+                                    <p id="modal-director"></p>
                                 </div>
                                 <div class="">
-                                    <img src="https://picsum.photos/230/330" alt="Affiche du film" class="img-fluid rounded-0 d-none d-lg-block mx-auto ">
+                                    <img id="modal-img-desktop" src="" alt="Affiche du film"
+                                        class="img-fluid rounded-0 d-none d-lg-block mx-auto ">
                                     <img src="images/cross_close.png" alt="Croix pour fermer la modal"
                                         class="img-fluid rounded-0 d-block d-lg-none mb-3 mx-auto p-2" data-bs-dismiss="modal">
                                 </div>
                             </div>
                         </div>
-                        <p class="modal-summary">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur.
-                        </p>
+                        <p class="modal-summary" id="modal-summary"></p>
                         <div class="text-center mb-3">
-                            <img src="https://picsum.photos/230/330" alt="Affiche du film"
+                            <img id="modal-img-mobile" src="" alt="Affiche du film"
                                 class="img-fluid rounded-0 d-block d-lg-none mb-3 mx-auto">
                         </div>
                         <p class="fw-bold mb-1">Avec:</p>
-                        <p class="modal-cast">
-                            Lorem Ipsum, Dolor Sit, Amet Consectetur, Adipiscing Elit, Sed Do, Eiusmod Tempor, Incididunt Ut,
-                            Labore Et
-                        </p>
+                        <p class="modal-cast" id="modal-cast"></p>
                         <div class="text-center mt-4">
-                            <button type="button" class="btn btn-primary btn-red btn-long d-none d-lg-block mx-auto" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="btn btn-primary btn-red btn-long d-none d-lg-block mx-auto"
+                                data-bs-dismiss="modal">Fermer</button>
                         </div>
                     </div>
                 </div>
